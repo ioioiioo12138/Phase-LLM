@@ -1,0 +1,13 @@
+### model
+model_name_or_path: /home/user_liang/materials/LlamaFactory/saves/Llama3.1-8B-Materials-LoRA/Llama3.1-8B-Materials-Merged-128
+# ⚠️ 注意：下面的 checkpoint-32 要改成你实际生成的最新文件夹名（去 saves/Qwen3-8B-Materials-LoRA-Fixed/ 目录下看一眼）
+adapter_name_or_path: /home/user_liang/materials/openr1/output/lora_grpo_materials_llama3.1-8b/checkpoint-30
+template: qwen3
+finetuning_type: lora
+trust_remote_code: true
+
+### export
+export_dir: /home/user_liang/materials/LlamaFactory/saves/Llama3.1-8B-Materials-LoRA/Llama3.1-8B-Materials-Merged-30 # 合并后的模型保存路径
+export_size: 5                                # 5GB一个文件，方便传输
+export_device: cuda                            # 强制用CUDA合并，绝对不会爆显存
+export_legacy_format: false
