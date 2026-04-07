@@ -63,7 +63,7 @@ class GPT:
 
 class DeepSeek:
     def __init__(self, version):
-        api_key = "sk-38fa8fe4c7b049c08a4b9949f2e1bad8"
+        api_key = "sk-38"
         base_url = "https://api.deepseek.com"
 
         self.version = version
